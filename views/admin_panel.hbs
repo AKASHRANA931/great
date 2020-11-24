@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="admin_panel.css">
+    <title>Admin Panel comcod</title>
+</head>
+<body>
+	
+ <section class="login-form-wrap">
+	 
+  <h1>Admin Panel</h1>
+
+  <form class="login-form" method="POST" action="/check">
+    <label>
+      <input type="email" name="Admin_email" required placeholder="Email">
+    </label>
+    <label>
+      <input type="password" name="Admin_password" required placeholder="Password">
+    </label>
+    <input type="submit" value="Login">
+  </form>
+  <h5><a href="#">Any Problem yiu can descuss with team members.</a></h5>
+  <h3>{{message}}</h3>
+</section>
+    
+    
+    </form>
+</body>
+</html>
