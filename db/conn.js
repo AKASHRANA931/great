@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://akash:akash@cluster0.a4xk7.mongodb.net/userapi",{
+mongoose.connect("mongodb://localhost:27017/userapi",{
     useCreateIndex:true ,
     useNewUrlParser:true , 
     useFindAndModify:true,

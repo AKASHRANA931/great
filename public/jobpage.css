@@ -2,6 +2,8 @@
     width: 100%;
     opacity: 60%;
 }
+
+
 /* JON SEARCH BAR start */
 
 #job-Search-bar {
@@ -145,7 +147,7 @@
 .job-element p {}
 
 @media screen and (max-width:600px) {
-    #contact-form{
+    #contact-form {
         display: inline-block;
     }
     .job-grid-container {

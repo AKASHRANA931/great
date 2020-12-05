@@ -1,0 +1,137 @@
+* {
+    z-index: -1;
+}
+
+.icon img {
+    height: 29px;
+    position: fixed;
+    margin-left: 90px;
+    margin-top: -1px;
+}
+
+.header {
+    width: 100%;
+    box-shadow: 0px 2px 7px #b5b5;
+    background-color: rgb(255 255 240);
+    height: 65px;
+    position: fixed !important;
+    z-index: 1;
+    background-color: #ffffff
+}
+
+.ml span {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.icon>h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #000000;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: -40px;
+}
+
+.btn div input {
+    margin: -2px 1px;
+    padding: 6px 40px;
+    position: arelative;
+    background-color: #f99977;
+    border-radius: 6px;
+    box-shadow: #f9997773 0px 1px 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#sign-in {
+    margin-right: 20px;
+}
+
+#sign-in>a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* side navbar start */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    line-height: 2.5;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 30px #aeaeae;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 0px 0px 0px 75px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffd4a9;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav img {
+    height: 3.8vh;
+    margin: 2.7vh 8vh
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* header  */
+    .header {
+        height: 50px;
+    }
+    .icon>img {
+        padding-top: 5px;
+        margin-left: 64px;
+        margin-top: -5px;
+        height: 30px;
+    }
+    .sidenav a {
+        padding: 0px 0px 0px 50px;
+        font-size: 20px;
+    }
+    .sidenav {
+        line-height: 2.2;
+        width: 225px;
+    }
+    #mySidenav img {
+        height: 3.6vh;
+        margin: 2.7vh 5vh;
+    }
+}

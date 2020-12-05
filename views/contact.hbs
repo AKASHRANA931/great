@@ -1,85 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="jobpage.css">
-
-    <title>ComCod</title>
-</head>
-
-<body>
-    <div class="container">
-
-        {{>header}}
-        
-        <div class="navbar" id="navbar1">
+{{>header}}
+ <div class="navbar" id="navbar1">
             <ul class="menuitem">
+
                 <li class="lst-item" id="lst1-item"><a href="/">Home</a></li>
-                <li class="lst-item" id="lst-item"><a href="/courses">Courses &nbsp <i class="fa fa-caret-down" id="in"></i></a>
+                <li class="lst-item" id="lst-item"><a href="/courses" onclick="clickcourses()" onclick="clickon()">Courses &nbsp <i class="fa fa-caret-down" id="in"></i></a>
+                 
                 </li>
                 <li class="lst-item" id="ls-item"><a href="/job-portal">Jobs &nbsp<i class="fa fa-caret-down"></i></a>
+                   
                 </li>
                 <li class="lst-item"><a href="/about">About</a></li>
                 <li class="lst-item"><a href="/contact">Contact</a></li>
             </ul>
         </div>
-        <div class="clearfx"></div>
-        <!--It is complete body-->
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="body">
-            <div class="course-slder-img">
-                <img src="img/3.png" alt="slider" width="100%" height="280px">
-            </div>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="ContactPage.css">
+    <link rel="stylesheet" type="text/css" href="ContactPageStructure.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+</head>
 
-            <!--Write Contact Page Code here-->
+<body>
 
-            <section id="contact-section">
-                <div class="container-contact">
-                    <h2>Contact Us</h2>
-                    <p>Email us and keep upto date with our latest news</p>
-                    <div class="contact-form" id="contact-form">
 
-                        <!-- First grid -->
-                        <div>
-                            <i class="fa fa-map-marker"></i><span class="form-info">  192 City Muzaffarnagar uttarpradesh</span><br>
-                            <i class="fa fa-phone"> </i><span class="form-info">  +92 00034567890</span><br>
-                            <i class="fa fa-envelope"></i><span class="form-info">  comcod12@Gmail.com</span>
-                        </div>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+					Send Us A Message
+				</span>
 
-                        <!-- second grid -->
-                        <div>
-                            <form>
-                                <input type="text" placeholder="Your Name" required class="input-con">
-                                <input type="text" name="Last name" placeholder="Last name" class="input-con"><br>
-                                <input type="email" placeholder="Email" required class="input-con"><br>
-                                <input type="text" placeholder="Subject of this message" class="input-con"><br>
-                                <textarea name="message" placeholder="Message" rows="5" required class="input-con"></textarea><br>
-                                <button class="submit-con">Send Message</button>
-                            </form>
-                        </div>
+                <label class="label-input100" for="first-name">Tell us your name *</label>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                    <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                    <input class="input100" type="text" name="last-name" placeholder="Last name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="email">Enter your email *</label>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Eg example@email.com">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="phone">Enter phone number</label>
+                <div class="wrap-input100">
+                    <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="message">Message *</label>
+                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                    <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+						Send Message
+					</button>
+                </div>
+            </form>
+
+            <div class="contact100-more flex-col-c-m" style="background-image: url('img/contectPageTemplate.png'); z-index:0;">
+                <div class="flex-w size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-map-marker"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+							Address
+						</span>
+
+                        <span class="txt2">
+							Shri Ram Group of college , UP Muzaffarnagar
+						</span>
                     </div>
                 </div>
-            </section>
 
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-phone-handset"></span>
+                    </div>
 
-            <!--Contact page Content end code-->
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+							Lets Talk
+						</span>
+
+                        <span class="txt3">
+							+91 95********95
+						</span>
+                    </div>
+                </div>
+
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-envelope"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+							General Support
+						</span>
+
+                        <span class="txt3">
+							teamcomcod@comcod.com
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
             <svg class="wave" id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path  d="M0,160L34.3,165.3C68.6,171,137,181,206,208C274.3,235,343,277,411,277.3C480,277,549,235,617,229.3C685.7,224,754,256,823,229.3C891.4,203,960,117,1029,112C1097.1,107,1166,181,1234,197.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
             <footer id="footer">
                 <div class=" footerbox footer-part-1" id="footer-part1">
                     <img src="img/logo.png" alt="comcod">
                     <h3>About</h3>
-                    <p>Muzaffarnagar (UP).India</p>
+                    <p>Muzaffarnagar<br> (UP).India</p>
                     <div id="footer-part1">
                         <h3>Contact us</h3>
                         <p>XXXXXXXXXXX</p>
                         <p>comcod@gmail.com</p>
                     </div>
-
-
                 </div>
                 <div class="footerbox footer-part-2" id="footer-part2">
                     <h3>Services</h3>
@@ -105,20 +162,79 @@
 
                     <ul class="footer-list">
                         <li class="footer-item"><a href="#">Search more information</a></li>
-                        <input type="Entry" placeholder="Input Search">
-                        <button>Search</button>
+                        <input type="Entry" placeholder="Input Search" style="font-size:1vw">
+                        <button style="font-size:1vw">Search</button>
                     </ul>
                 </div>
 
             </footer>
             <div class="copy">
-                <p>Copyright &copy; 2020. All Right Reserved by ComCod</p>
+                <p style="font-size:1vw">Copyright &copy; 2020. All Right Reserved by ComCod</p>
             </div>
         </div>
         <!--Body Close-->
     </div>
     <!--Container-close-->
 </body>
-<script src="script.js"></script>
+<script src="jquery-3.2.1 (contactpage).min.js"></script>
+<script>
+    (function($) {
+        "use strict";
+
+
+
+
+
+        /*==================================================================
+        [ Validate ]*/
+        var input = $('.validate-input .input100');
+
+        $('.validate-form').on('submit', function() {
+            var check = true;
+
+            for (var i = 0; i < input.length; i++) {
+                if (validate(input[i]) == false) {
+                    showValidate(input[i]);
+                    check = false;
+                }
+            }
+
+            return check;
+        });
+
+
+        $('.validate-form .input100').each(function() {
+            $(this).focus(function() {
+                hideValidate(this);
+            });
+        });
+
+        function validate(input) {
+            if ($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+                if ($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                    return false;
+                }
+            } else {
+                if ($(input).val().trim() == '') {
+                    return false;
+                }
+            }
+        }
+
+        function showValidate(input) {
+            var thisAlert = $(input).parent();
+
+            $(thisAlert).addClass('alert-validate');
+        }
+
+        function hideValidate(input) {
+            var thisAlert = $(input).parent();
+
+            $(thisAlert).removeClass('alert-validate');
+        }
+
+
+    })(jQuery);
+</script>
 
 </html>

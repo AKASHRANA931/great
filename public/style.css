@@ -2,7 +2,35 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: system-ui;
+    font-family: Poppins-Regular;
+}
+
+
+/*[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
 }
 
 .icon img {
@@ -14,6 +42,7 @@
 
 .header {
     width: 100%;
+    z-index: 1;
     box-shadow: 0px 2px 7px #b5b5;
     background-color: rgb(255 255 240);
     height: 65px;
@@ -53,9 +82,9 @@
 
 #sign-in {
     margin-right: 20px;
-
 }
-#sign-in > a{
+
+#sign-in>a {
     text-decoration: none;
     color: #000000;
 }
@@ -121,7 +150,7 @@
 
 .navbar {
     width: 100%;
-    font-family: sans-serif;
+    font-family: Poppins-Regular;
     padding-top: 120px;
     margin-top: 0px;
     height: 40px;
@@ -135,7 +164,7 @@
 }
 
 .lst-item {
-    font-family: sans-serif;
+    font-family: Poppins-Regular;
     font-size: 1.2vw;
     font-weight: bold;
     margin-top: -30px;
@@ -145,7 +174,7 @@
 .lst-item>a {
     text-decoration: none;
     color: #000000;
-    font-family: sans-serif;
+    font-family: Poppins-Regular;
     font-size: 1.2vw;
 }
 
@@ -183,7 +212,7 @@
 .body {
     overflow: hidden;
     width: 100%;
-    padding: 5px 5px 0px 5px;
+    padding: 3px 3px 0px 3px;
     background-color: ivory;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
@@ -205,7 +234,7 @@
 .card {
     overflow: hidden;
     width: 66%;
-    height: 17.203vw;
+    height: 18.203vw;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     background-color: ivory;
@@ -278,9 +307,9 @@
 .course-card {
     box-shadow: rgb(174, 172, 172) 0px 0px 10px;
     background-color: white;
-    height: 280px;
-    width: 252px;
-    margin: 20px 43px;
+    height: 21vw;
+    width: 17vw;
+    margin: 2vw 0vw;
 }
 
 .course-container div img {
@@ -290,20 +319,23 @@
 }
 
 .course-container div h2 {
-    margin: 8px;
+    margin: .3vw;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     background-color: white;
 }
 
 .course-container div input {
     border: none;
+    color: white;
     background-color: #2196F3;
-    border-radius: 4px;
-    margin: 11px 28px;
-    padding: 5px 69px;
+    border-radius: .4vw;
+    margin: 2vw;
+    padding: .3vw 4vw;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1vw;
+    font-family: Montserrat-Bold;
 }
 
 .course-container {
@@ -330,12 +362,18 @@
 #cs-card p {
     font-size: small;
     margin: 0px 25px;
-    /* box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1); */
-    padding: 5px;
+    /* padding: .2vw; */
 }
 
 #cs-card p>ins {
-    color: green;
+    color: #31a42e;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+#cs-card p>del {
+    font-size: 1vw;
+    color: rgb(255 115 115 / 73%);
 }
 
 
@@ -397,6 +435,7 @@
     margin: 1.8vw;
     padding: 1.098vw 1.390vw;
     font-size: 1vw;
+    font-family: Montserrat-Bold;
     background-color: #f99977;
     border-radius: 6px;
     box-shadow: #f9997773 0px 1px 4px;
@@ -441,7 +480,7 @@
 
 .sub-heading>p {
     padding: 10px;
-    background-color: rgb(207, 203, 203);
+    background-color: #ffffff;
     margin: 20px 0px 0px 0px;
 }
 
@@ -479,6 +518,7 @@
     height: 50px;
     border-radius: 50px;
     text-align: center;
+    text-transform: capitalize;
     background-color: #5e75f7;
     box-shadow: #6578e0e0 0px 1px 4px;
     color: white;
@@ -497,7 +537,7 @@
 /* footer section start  */
 
 .footer-top {
-    font-family: sans-serif;
+    font-family: Poppins-Regular;
     font-size: 1vw;
     height: 300px;
     box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
@@ -518,46 +558,55 @@ footer {
 }
 
 .footer-part-1 {
+    z-index: 0;
     display: grid;
-    padding: 0px 40px;
+    padding: 0vw 3vw;
 }
 
 .footer-part-1 img {
-    height: 50px;
-    margin: 20px 0px;
+    z-index: 0;
+    height: 3.4vw;
+    margin: 2vw 0px;
+}
+
+.footer-part-1 p {
+    font-size: 1.2vw;
 }
 
 .footerbox h3 {
-    margin: 10px 0px;
+    margin: .8vw 0vw;
     color: #ff914d;
+    font-size: 1.8vw;
 }
 
 .footer-part-4 {
-    padding: 80px 50px;
+    z-index: 0;
+    padding: 5vw 2vw;
 }
 
 .footer-part-4 input {
-    margin: 11px 0px;
-    height: 32px;
-    width: 194px;
-    border-radius: 6px;
+    margin: 1vw 0px;
+    height: 2vw;
+    width: 16vw;
+    border-radius: .5vw;
     border-style: none;
-    padding: 10px;
+    padding: 1.3vw;
 }
 
 .footer-part-3,
 .footer-part-2 {
-    padding: 50px 55px;
+    z-index: 0;
+    padding: 3vw 6vw;
 }
 
 .footer-part-4 button {
-    height: 22px;
-    width: 126px;
-    border-radius: 6px;
+    height: 2vw;
+    width: 9vw;
+    font-family: Montserrat-Bold;
+    border-radius: 0.4vw;
     border-style: none;
     color: white;
     background-color: #ff914d;
-    margin: 2px 0px
 }
 
 .footer-part-4 .footer-list {
@@ -572,6 +621,7 @@ footer {
 .footer-list li a {
     text-decoration: none;
     color: #524943;
+    font-size: 1.2vw;
 }
 
 
@@ -584,7 +634,7 @@ footer {
 }
 
 .copy p {
-    padding: 5px;
+    padding: .4vw;
     color: #ffffff;
 }
 
@@ -627,7 +677,7 @@ footer {
         font-size: 3.2vw;
     }
     .imgslide img {
-        height: 30vw;
+        height: 45vw;
     }
     #card-container {
         margin-top: -12vw;
@@ -635,20 +685,20 @@ footer {
     }
     .card {
         padding: 0px;
-        min-width: 90%;
+        min-width: 70%;
         height: 20px;
     }
     .card p {
-        font-size: 2.1vw;
+        font-size: 1.5vw;
     }
     #card1 {
-        height: 34.177vw;
-        margin-top: 20px;
-        margin-left: 4px;
+        height: 29.177vw;
+        margin-top: 23px;
+        margin-left: 17px;
     }
     #card1 img {
-        height: 10vw;
-        margin: 2.6vw auto;
+        height: 8vw;
+        margin: 2.2vw auto;
     }
     .card h3 {
         font-size: 2.3vw;
@@ -663,9 +713,9 @@ footer {
     }
     #ml span {
         display: inline-block;
-        margin-top: 11px;
+        margin-top: 7px;
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 24px !important;
         font-weight: bold;
         color: #000000;
     }
@@ -679,7 +729,8 @@ footer {
         display: flex;
         justify-content: flex-end;
         margin-right: 0px;
-        margin-top: -45px;
+        margin-top: -38px;
+        font-size: smaller;
     }
     .btn div input {
         margin: 2px 1px;
@@ -693,15 +744,11 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
     #cs-card {
-        max-width: 160px;
-        height: 205px;
-        margin: 18px 8zpx;
+        width: 29vw;
+        height: 36.5vw;
+        margin: 4vw 0vw;
         display: grid;
         align-items: center;
-    }
-    .course-container div img {
-        height: auto;
-        max-width: 160px;
     }
     .course-H h1 {
         font-size: 5vw;
@@ -709,53 +756,34 @@ footer {
     .course-H p {
         font-size: 4vw;
     }
+    .course-container div input {
+        margin: 2vw 4vw;
+    }
     #cs-container div h2 {
-        margin: 4px;
-        font-size: 1.2rem;
-        background-color: white;
-        text-align: center;
+        font-size: 3.5vw;
     }
     #cs-container div input {
-        margin: 10px 22px;
-        padding: 4px 0px;
-        font-size: 13px;
-        font-weight: bold;
-    }
-    #cs-card p {
-        text-align: center;
-        font-weight: bold;
-        box-shadow: 2px 5px 24px rgba(0, 0, 0, 0.1);
-        padding: 5px;
+        font-size: 2.6vw;
     }
     #cs-card p>ins {
-        color: green;
-        font-weight: lighter;
+        font-size: 2vw;
+    }
+    #cs-card p>del {
+        font-size: 2vw;
+    }
+    #cs-card {
+        width: 33vw;
+        height: 36vw;
+        margin: 5vw 0vw
     }
     /* navbar  */
     #wave {
-        margin: -3px auto;
+        margin: -14px auto;
     }
-    #footer-part1 img {
-        height: 20px;
-        margin: 0px 15px;
-        margin-top: 22px;
-        position: absolute;
-    }
-    #footer-part1 {
-        margin-left: 0px;
-        margin-top: -20px;
-        padding: 0px;
-    }
-    #footer-part1 h3 {
-        margin-top: 70px;
-        text-align: center;
-        margin-left: -21px;
-        font-size: 5vw;
-    }
-    #footer-part1 p {
-        margin-top: -10px;
-        margin-left: 21px;
-    }
+    #footer-part1 img {}
+    #footer-part1 {}
+    #footer-part1 h3 {}
+    #footer-part1 p {}
     #footer-list {
         max-width: 33.5;
         float: left;
@@ -765,12 +793,15 @@ footer {
         padding: 40px 13px;
         font-size: 4vw;
     }
-    #footer-part4 {
-        display: none;
+    .footer-list li {
+        line-height: 1;
     }
     /* job section  */
     #job-section {
         padding: 10px 2px;
+    }
+    .footer-list li {
+        line-height: 1;
     }
     .job-detail p {
         font-size: 2vw;
@@ -801,4 +832,41 @@ footer {
         margin-left: 15px;
         width: 100%;
     }
+}
+
+@media screen and (max-width:600px) {
+    /* header  */
+    .header {
+        height: 50px;
+    }
+    .icon>img {
+        padding-top: 5px;
+        margin-left: 50px;
+        margin-top: -7px;
+        height: 30px;
+    }
+    .sidenav a {
+        padding: 0px 0px 0px 50px;
+        font-size: 20px;
+    }
+    .sidenav {
+        line-height: 2.2;
+        width: 225px;
+    }
+    #mySidenav img {
+        height: 3.6vh;
+        margin: 2.7vh 5vh;
+    }
+}
+
+
+/* ========================================================================================================= */
+
+
+/* courses page css */
+
+.course_slder_img img {
+    height: 33vw;
+    width: 100%;
+    padding: 4px;
 }
