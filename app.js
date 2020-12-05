@@ -24,6 +24,7 @@ app.use(session({
 }));
 
 // for save data in database
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
