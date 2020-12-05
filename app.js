@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 //port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 // static file
 app.use(express.static(__dirname+'/public/'));
